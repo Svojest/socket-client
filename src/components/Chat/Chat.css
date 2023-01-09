@@ -1,0 +1,79 @@
+.chat {
+	height: 100vh;
+	max-width: 768px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-rows: 50px auto 50px;
+	padding: 10px;
+  color: white;
+}
+
+.chat__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.chat__room-name {
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.chat__qty {
+	font-weight: 400;
+	font-size: 11px;
+}
+
+.chat__button-exit {
+	background-image: url('../../images/logout.png');
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: none;
+	width: 20px;
+	height: 20px;
+}
+
+.chat__button {
+  border: none;
+  padding: 0 20px;
+  background-image: url('../../images/send.png');
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+
+.chat__form {
+  background-color: rgba(240, 248, 255, 0.1);
+  border-radius: 20px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.chat__bar {
+  width: 100%;
+
+}
+
+.chat__input {
+  color: white;
+  padding: 0 20px;
+  width: inherit;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.chat__input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.chat__message {
+	margin-top: 20px;
+	max-height: 100vh;
+	overflow: auto;
+}
