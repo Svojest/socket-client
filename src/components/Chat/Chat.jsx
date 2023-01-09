@@ -8,7 +8,7 @@ import Messages from '../Messages/Messages';
 
 import './Chat.css';
 
-const socket = io.connect('http://localhost:5000');
+const socket = io.connect('https://chat-room-zpu8.onrender.com');
 const Chat = () => {
 	const [state, setState] = useState([]);
 	const [params, setParams] = useState({ room: '', user: '' });
